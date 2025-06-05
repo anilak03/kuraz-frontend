@@ -1,0 +1,143 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #009da8, #89edff);
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Task App Container */
+.task-app {
+  background: rgba(255, 255, 255, 0.85);
+  width: 100%;
+  max-width: 500px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* Form */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  font-size: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #0c8d967e;
+  outline: none;
+}
+
+button {
+  padding: 12px 16px;
+  font-size: 15px;
+  background-color:#33d9df;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color:#33d9df8c;
+}
+
+/* Error Message */
+.error {
+  color: #c62828;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Filters */
+.filters {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filters button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #33d9df;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.filters button:hover {
+  background: #33d9df8c;
+  color: white;
+}
+
+/* Task List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: #16dcff38;
+  margin-bottom: 10px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+li:hover {
+  background: #16dcff1e;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #005e18;
+  font-style: italic;
+}
+
+.task-actions button {
+  margin-left: 5px;
+  padding: 6px 10px;
+  background: #0ad4f8ad;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.task-actions button:hover {
+  background: #0ad4f844;
+}
